@@ -1,2 +1,4 @@
-A = input()
-print(' '.join(word[::-1] for word in A.split()))
+def rev(s):
+    return s if s == "" else rev(s[1:]) + s[0]
+
+print(rev(input()))
